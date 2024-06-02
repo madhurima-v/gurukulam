@@ -8,18 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 1000);
 });
 
-/**
-   * Hamburger lines
-   */
 
-const mobile_nav = document.querySelector(".mobile-navbar-btn");
-const nav_header = document.querySelector(".header");
-
-const toggleNavbar = () => {
-  nav_header.classList.toggle("active");
-};
-
-mobile_nav.addEventListener("click", () => toggleNavbar());
 
 
 /**
@@ -41,3 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(element);
   });
 });
+
+
+
+/**
+   * Toggle Button
+   */
+
+function toggleMenu() {
+  const navbarCollapse = document.getElementById('navbarNav');
+  if (navbarCollapse.classList.contains('show')) {
+    navbarCollapse.classList.remove('show');
+  } else {
+    navbarCollapse.classList.add('show');
+  }
+}
+
+

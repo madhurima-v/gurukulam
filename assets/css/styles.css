@@ -2,9 +2,8 @@
 # Google Fonts
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Mukta:wght@600&family=Outfit:wght@600&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -21,7 +20,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background: #F5F5F7;
+    width: 100%;
 }
 
 
@@ -29,78 +28,104 @@ body {
 /*--------------------------------------------------------------
 # Header Section
 --------------------------------------------------------------*/
-
-.header {
-    padding: 0 4.8rem;
-    height: 4rem;
+.banner {
+    width: 100%;
+    height: 42px;
+    padding: 10px 20px;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(207, 205, 205);
-    font-family: "Work Sans", sans-serif;
-  }
-  
-  .header .logo-title {
-      height: 24px;
-  }
-  
-  .navbar-list {
-    display: flex;
-    gap: 4.8rem;
-    list-style: none;
-    height: 23px;
-  }
-  
-  
-  .navbar-link:link,
-  .navbar-link:visited {
-    display: inline-block;
+}
+
+.icons a {
     text-decoration: none;
+    margin-left: 15px;
+}
+
+.banner .bx {
+    font-size: 25px;
+    color: black;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info p {
+    margin-left: 15px;
+    font-size: 14px;
+    height: 11px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: black;
+}
+
+.brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #4ebaca;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.brand .logo {
+    width: 115px;
+    height: 105px;
+    align-items: start;
+}
+
+.brand .brand-title {
+    font-size: 35px;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navbar {
+    background-color: #F5F6F6;
+}
+
+.navbar-nav {
+    flex-direction: row;
     font-size: 18px;
     font-weight: 500;
-    color: #212529;
-    transition: all 0.3s;
-  }
-  
-  .navbar-link:hover,
-  .navbar-link:active {
-    color: rgb(128, 100, 100);
-  }
-  
-  .mobile-navbar-btn {
+}
+
+.nav-line {
+    padding-left: 10px;
+}
+
+.nav-link {
+    padding: 0px 15px;
+}
+
+.nav-content {
     display: none;
-    background: transparent;
-    cursor: pointer;
-  }
-  
-  .mobile-nav-icon {
-    width: 4rem;
-    height: 4rem;
-    color: #212529;
-  }
-  
-  .mobile-nav-icon[name="close-outline"] {
-    display: none;
-  }
+}
+
 
 /*--------------------------------------------------------------
 # Mandatory Disclosure Section
 --------------------------------------------------------------*/
 
 .doc-title h1 {
-    font-family: "LXGW WenKai TC", cursive;
     color: black;
-    font-weight: 600;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    text-align: center;
     letter-spacing: .5px;
 }
 
-.doc-content .bx {
-    font-size: 20px;
-}
 
-.table td a{
+.table td a {
     text-decoration: none;
     color: black;
 }
@@ -108,85 +133,103 @@ body {
 /*--------------------------------------------------------------
 # Faculty Information Section
 --------------------------------------------------------------*/
-.faculty-info h2{
+.faculty-info h1 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.faculty-info h2 {
     color: #6e6e73;
+    text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
 # Student Information Section
 --------------------------------------------------------------*/
 
-.studentinfo-title h1 {
-    font-family: "LXGW WenKai TC", cursive;
-    color: black;
-    font-weight: 600;
+.student-info h1 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
     font-style: normal;
-    text-align: center;
-    letter-spacing: .5px;
+    font-size: 30px;
 }
+
+/*--------------------------------------------------------------
+# Infrastructure Information Section
+--------------------------------------------------------------*/
+.infra-info h1 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+}
+
+
 
 /*--------------------------------------------------------------
 # Footer Section
 --------------------------------------------------------------*/
-footer{
+footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: auto;
-    background-color: #2d2e33;
+    background-color: #F5F6F6;
     padding: 60px 10%;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.footer-col{
+.footer-col {
     width: 25%;
 }
 
-.footer-col h4{
+.footer-col h4 {
     position: relative;
     margin-bottom: 30px;
     font-weight: 400;
     font-size: 22px;
-    color: lightgray;
+    color: black;
     text-transform: capitalize;
 }
 
-.footer-col h4::before{
+.footer-col h4::before {
     content: '';
     position: absolute;
     left: 0;
     bottom: -6px;
-    background-color: #6e6e73;
+    background-color: #4ebaca;
     height: 2px;
     width: 40px;
 }
 
-ul li:not(:last-child){
+ul li:not(:last-child) {
     margin-bottom: 8px;
 }
 
-ul li a{
+ul li a {
     display: block;
     font-size: 15px;
     text-transform: capitalize;
-    color: #bdb6b6;
+    color: gray;
     text-decoration: none;
     transition: 0.4s;
 }
 
-ul li a:hover{
-    color: white;
+ul li a:hover {
+    color: black;
     padding-left: 2px;
 }
 
-.links a{
+.links a {
     display: inline-block;
     height: 44px;
     width: 44px;
     color: white;
-    background-color: #6e6e73;
+    background-color: #4ebaca;
     margin: 0 8px 8px 0;
     text-align: center;
     line-height: 44px;
@@ -194,26 +237,11 @@ ul li a:hover{
     transition: 0.4s;
 }
 
-.links a:hover{
+.links a:hover {
     color: #4d4f55;
     background-color: white;
 }
 
-.developer h6{
-    color: #bdb6b6;
-
-}
-
-.developer p{
-    color: #6e6e73;
-}
-
-.developer p a{
-    text-decoration: underline;
-    color: #6e6e73;
-    font-size: 17px;
-    font-weight: 500;
-}
 
 /*--------------------------------------------------------------
 # Animation on Scroll
@@ -280,7 +308,7 @@ ul li a:hover{
     position: fixed;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
-    border: 8px solid gray;
+    border: 8px solid #4ebaca;
     border-top: 8px solid #ffffff;
     border-radius: 50%;
     width: 50px;
@@ -301,127 +329,221 @@ ul li a:hover{
 /*--------------------------------------------------------------
 # Media Query
 --------------------------------------------------------------*/
+
 /* Responsive Codes  */
 
-@media(max-width: 740px){
-    .footer-col{
+@media screen and (max-width:840px) {
+    .banner {
+        height: 25px;
+    }
+
+    .icons,
+    .info {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .banner {
+        display: none;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .nav-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        background-color: #4ebaca;
+    }
+
+    .nav-logo {
+        width: 110px;
+        height: 100px;
+    }
+
+    .nav-title {
+        font-size: 5vw;
+        color: white;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: "Kanit", sans-serif;
+    }
+
+    .navbar-toggler {
+        background-color: transparent;
+        border: 0;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .ml-auto {
+        margin-left: auto;
+    }
+
+    .custom-toggler:focus,
+    .custom-toggler:hover {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    .nav-line {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:540px) {
+    .logo2 {
+        display: none;
+    }
+
+    .brand {
+        margin: auto;
+        padding: 0 10px;
+    }
+
+    .brand .logo {
+        padding-right: 15px;
+    }
+
+    .brand .brand-title {
+        padding-right: 30px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .brand .logo {
+        width: 100px;
+        height: 95px;
+    }
+
+    .brand .brand-title {
+        font-size: 24px;
+        padding-left: -5px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .nav-logo {
+        width: auto;
+        height: 70px;
+    }
+
+    .nav-title {
+        font-size: 4.8vw;
+    }
+}
+
+
+@media screen and (max-width:331px) {
+
+    .nav-logo {
+        width: auto;
+        height: 55px;
+    }
+
+    .nav-title {
+        font-size: 4.2vw;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media(max-width: 740px) {
+    .footer-col {
         width: 50%;
         margin-bottom: 30px;
         text-align: left;
     }
-  
-    .footer-col h4::before{
+
+    .footer-col h4::before {
         all: unset;
         content: '';
         position: absolute;
         left: 0;
         bottom: -6px;
-        background-color:#6e6e73;
+        background-color: #4ebaca;
         height: 2px;
         width: 40px;
     }
-    }
-  
-  @media(max-width: 555px){
-    .footer-col{
+}
+
+@media(max-width: 555px) {
+    .footer-col {
         width: 100%;
     }
-  }
-  
-  /* 1350px  */
-  @media (max-width: 1350px) {
-    .mobile-navbar-btn {
-      display: block;
-      z-index: 999;
-      color: #212529;
-    }
-  
-    .header {
-      position: relative;
-    }
-  
-   .header .logo-title {
-    font-size: 20px;
-    width: 17%;
-    height: 43px;
-   }
-  
-    .navbar {
-      /* display: none; */
-      width: 100%;
-      min-height: 150vh;
-      background: #ffffff;
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+}
 
-      /* to get the tranisition  */
-      transform: translateX(100%);
-      transition: all 0.5s linear;
-  
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
-  
-    .navbar-list {
-      flex-direction: column;
-      height: auto;
-      margin: auto;
-      padding-left: 0;
-    }
-  
-    .active .navbar {
-      transform: translateX(0);
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
-  
-    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
-      display: block;
-    }
-  
-    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
-      display: none;
-    }
-  }
-  
-  /* Below 560px  */
-  @media (max-width: 35em) {
-    .header {
-      padding: 0 2.4rem;
-    }
-  
-    .header .logo {
-      width: 25%;
-      height: 75%;
-    }
-  }
+/* Below 449px  */
+@media (max-width: 449px) {
 
-  /* Below 449px  */
-  @media (max-width: 449px){
-    .studentinfo-title h1,
-    .doc-title h1 {
-        font-size: 22px;
-    }
-
-    .faculty-info{
+    .faculty-info {
         [data-animate="left"] {
             transform: translateX(-250px);
         }
-        
+
         [data-animate="right"] {
             transform: translateX(250px);
         }
-        
+
         .animate-on-scroll.visible {
             opacity: 1;
             transform: translateX(0);
         }
     }
-    
-  }
+
+}
+
+@media (max-width: 296px) {
+
+    .faculty-info {
+        [data-animate="left"] {
+            transform: translateX(-150px);
+        }
+
+        [data-animate="right"] {
+            transform: translateX(150px);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+}

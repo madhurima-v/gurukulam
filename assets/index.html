@@ -7,15 +7,19 @@
   <title>Gurukulam Academy</title>
 
   <!-- Favicon Link -->
-  <link rel="icon" type="image/x-icon" href="images\favicon.png">
+  <link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
 
   <!-- Bootstrap Link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <!-- Ionicons Link -->
+  <!-- Boxicon Link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Ionicon Link -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 
   <!-- Main CSS File -->
   <link rel="stylesheet" href="css/styles.css">
@@ -24,27 +28,46 @@
 <body>
 
   <!-- Header Section -->
-
-  <header class="header sticky-top">
-    <h5 class="logo-title">Gurukulam Academy</h5>
-
-    <nav class="navbar">
-      <ul class="navbar-list">
-        <li><a class="navbar-link" href="#">Home</a></li>
-        <li><a class="navbar-link" href="#">About</a></li>
-        <li><a class="navbar-link" href="#">Services</a></li>
-        <li><a class="navbar-link" href="#">Gallery</a></li>
-        <li><a class="navbar-link" href="#">Testing</a></li>
-        <li>
-          <a class="navbar-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="mobile-navbar-btn">
-      <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
-      <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+  <header class="header">
+    <div class="banner">
+      <div class="icons">
+        <a href=""><i class='bx bxl-facebook-circle'></i></a>
+        <a href=""><i class='bx bxl-twitter'></i></a>
+        <a href=""><i class='bx bxl-google'></i></a>
+        <a href=""><i class='bx bxl-youtube'></i></a>
+        <a href=""><i class='bx bxl-instagram'></i></a>
+      </div>
+      <div class="info">
+        <p>Phone: +918006013456</p>
+        <p>Email: 1gurukulamacademy@gmail.com</p>
+      </div>
     </div>
+    <div class="brand pt-2">
+      <img class="logo" src="images/logo.png" alt="brand-logo">
+      <h1 class="brand-title">Gurukulam<br> <span style="padding-left: 24px ;">Academy</span></h1>
+      <img class="logo logo2" src="images/logo.png" alt="brand-logo">
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="nav-content">
+        <img class="nav-logo me-4" src="images/logo.png" alt="brand-logo">
+        <h3 class="nav-title responsive-text me-1">Gurukulam Academy</h3>
+      </div>
+      <button class="navbar-toggler ml-auto custom-toggler" type="button" onclick="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home <span class="nav-line">|</span> </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About <span class="nav-line">|</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services <span class="nav-line">|</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery <span class="nav-line">|</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Testing <span class="nav-line">|</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <!-- End Header Section -->
@@ -53,10 +76,10 @@
 
   <section class="documents">
     <div class="doc-title pt-5">
-      <h1> | Mandatory Disclosures |</h1>
+      <h1 class="mx-5"> Mandatory Disclosures </h1>
     </div>
     <div class="doc-content mx-5 py-5">
-      <table class="table table-hover table-responsive-lg">
+      <table class="table table-hover table-responsive-sm">
         <thead>
           <tr>
             <th scope="col">Sr No.</th>
@@ -66,35 +89,43 @@
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td><a href="https://drive.google.com/file/d/1ekUvvo7WQM4b7rbHA8JPYAHrEBlCXYqV/view?usp=drivesdk" target="_blank">Copies of Affiliation / Upgradation letter and recent extension of Affiliation</a></td>
+            <td><a href="https://drive.google.com/file/d/1ekUvvo7WQM4b7rbHA8JPYAHrEBlCXYqV/view?usp=drivesdk"
+                target="_blank">Copies of Affiliation / Upgradation letter and recent extension of Affiliation</a></td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td><a href="https://drive.google.com/file/d/1ekUvvo7WQM4b7rbHA8JPYAHrEBlCXYqV/view?usp=drivesdk" target="_blank">Copies of Societies / Trust / Company Registration / Renewal certificate</a></td>
+            <td><a href="https://drive.google.com/file/d/1CQy1RC-nDuWv69aFgXRknF-gNoSz3U9J/view?usp=drivesdk"
+                target="_blank">Copies of Societies / Trust / Company Registration / Renewal certificate</a></td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td><a href="https://drive.google.com/file/d/1ekUvvo7WQM4b7rbHA8JPYAHrEBlCXYqV/view?usp=drivesdk" target="_blank">Copy of no objection certificate (NOC) issued</a></td>
+            <td><a href="" target="_blank">Copy of no objection certificate (NOC) issued</a></td>
           </tr>
           <tr>
             <th scope="row">4</th>
-            <td><a href="https://drive.google.com/file/d/1ekUvvo7WQM4b7rbHA8JPYAHrEBlCXYqV/view?usp=drivesdk" target="_blank">Copies of recognition certificate under RTE Act, 2009 and it's renewal</a></td>
+            <td><a href="https://drive.google.com/file/d/1CWeuoiVmJYARE5OFVuTEMt8f3Nn-n3ns/view?usp=drivesdk"
+                target="_blank">Copies of recognition certificate under RTE Act, 2009 and it's renewal</a></td>
           </tr>
           <tr>
             <th scope="row">5</th>
-            <td><a href="https://drive.google.com/file/d/1ekUvvo7WQM4b7rbHA8JPYAHrEBlCXYqV/view?usp=drivesdk" target="_blank">Copy of valid building safety certificate as per the national building code</a></td>
+            <td><a href="https://drive.google.com/file/d/1kX_u3f2amzOjTbJLqBSAYcV93ePobAPT/view?usp=drivesdk"
+                target="_blank">Copy of valid building safety certificate as per the national building code</a></td>
           </tr>
           <tr>
             <th scope="row">6</th>
-            <td><a href="https://drive.google.com/file/d/1ekUvvo7WQM4b7rbHA8JPYAHrEBlCXYqV/view?usp=drivesdk" target="_blank">Copy of valid fire safety certificate issued by the competent authority</a></td>
+            <td><a href="https://drive.google.com/file/d/1XXtbeKuDLopBxlYHQwCj3m-qZcg2IEuP/view?usp=drivesdk"
+                target="_blank">Copy of valid fire safety certificate issued by the competent authority</a></td>
           </tr>
           <tr>
             <th scope="row">7</th>
-            <td><a href="https://drive.google.com/file/d/1ekUvvo7WQM4b7rbHA8JPYAHrEBlCXYqV/view?usp=drivesdk" target="_blank">Copy of the DEO certificate submitted by the school for affiliation / upgradation / extension of affiliationor self certification by school</a></td>
+            <td><a href="https://drive.google.com/file/d/1jKJJFH6FtbujMk2t71-AvjLdg_lRo60j/view?usp=drivesdk"
+                target="_blank">Copy of the DEO certificate submitted by the school for affiliation / upgradation /
+                extension of affiliationor self certification by school</a></td>
           </tr>
           <tr>
             <th scope="row">8</th>
-            <td><a href="https://drive.google.com/file/d/1ekUvvo7WQM4b7rbHA8JPYAHrEBlCXYqV/view?usp=drivesdk" target="_blank">Copy of valid water, health and sanitation certificates</a></td>
+            <td><a href="https://drive.google.com/file/d/1egypDezLwSUUSxAVGxeFam17Ovf7Oov5/view?usp=drivesdk"
+                target="_blank">Copy of valid water, health and sanitation certificates</a></td>
           </tr>
         </tbody>
       </table>
@@ -103,97 +134,432 @@
 
   <!-- End Mandatory Disclosures Section -->
 
-   <!-- Faculty Information Section -->
+  <!-- Faculty Information Section -->
 
-   <section class="faculty-info">
-    <div data-animate="left" class="animate-on-scroll faculty-one text-start mx-5 my-5 pt-3">
-      <h4>Special Educator :</h4>
-      <h2>Deepak Kumar Sharma</h2>
+  <section class="faculty-info animate-on-scroll">
+    <h1 class="mx-5"> >&ensp;Faculty Information </h1>
+    <div data-animate="left" class="animate-on-scroll faculty-one text-start mx-5 my-3 pt-3">
+      <h4>Principal :</h4>
+      <h2>MR. BHASKAR CHAUBEY</h2>
     </div>
-    <div data-animate="right" class="animate-on-scroll faculty-two text-end mx-5 my-5 pb-3">
+    <div data-animate="right" class="animate-on-scroll faculty-two text-end mx-5 my-3 pb-3">
       <h4>Counsellor And Wellness Teacher :</h4>
-      <h2>Kavita Punetha</h2>
+      <h2>Mrs. Kavita Punetha</h2>
     </div>
-   </section>
+    <div data-animate="left" class="animate-on-scroll faculty-one text-start mx-5 my-3 pt-3">
+      <h4>Special Educator :</h4>
+      <h2>MR. Deepak Kumar Sharma</h2>
+    </div>
+    <div class="container mt-5">
+      <div class="table-responsive">
+        <table class="table table-bordered my-5">
+          <thead class="thead-dark table-primary">
+            <tr>
+              <th>Teacher Name</th>
+              <th>Qualification</th>
+              <th>Subject</th>
+              <th>Contact Number</th>
+              <th>Email Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1 -->
+            <tr>
+              <td>John Doe</td>
+              <td>MSc Physics</td>
+              <td>Physics</td>
+              <td>123-456-7890</td>
+              <td>john.doe@example.com</td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+              <td>Jane Smith</td>
+              <td>MA English</td>
+              <td>English</td>
+              <td>123-456-7891</td>
+              <td>jane.smith@example.com</td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+              <td>Michael Johnson</td>
+              <td>MSc Mathematics</td>
+              <td>Mathematics</td>
+              <td>123-456-7892</td>
+              <td>michael.johnson@example.com</td>
+            </tr>
+            <!-- Row 4 -->
+            <tr>
+              <td>Emily Davis</td>
+              <td>MA History</td>
+              <td>History</td>
+              <td>123-456-7893</td>
+              <td>emily.davis@example.com</td>
+            </tr>
+            <!-- Row 5 -->
+            <tr>
+              <td>David Wilson</td>
+              <td>MSc Chemistry</td>
+              <td>Chemistry</td>
+              <td>123-456-7894</td>
+              <td>david.wilson@example.com</td>
+            </tr>
+            <!-- Row 6 -->
+            <tr>
+              <td>Sarah Brown</td>
+              <td>MA Geography</td>
+              <td>Geography</td>
+              <td>123-456-7895</td>
+              <td>sarah.brown@example.com</td>
+            </tr>
+            <!-- Row 7 -->
+            <tr>
+              <td>Chris Taylor</td>
+              <td>MSc Biology</td>
+              <td>Biology</td>
+              <td>123-456-7896</td>
+              <td>chris.taylor@example.com</td>
+            </tr>
+            <!-- Row 8 -->
+            <tr>
+              <td>Jessica Miller</td>
+              <td>MA Art</td>
+              <td>Art</td>
+              <td>123-456-7897</td>
+              <td>jessica.miller@example.com</td>
+            </tr>
+            <!-- Row 9 -->
+            <tr>
+              <td>Daniel Martinez</td>
+              <td>PhD Physics</td>
+              <td>Physics</td>
+              <td>123-456-7898</td>
+              <td>daniel.martinez@example.com</td>
+            </tr>
+            <!-- Row 10 -->
+            <tr>
+              <td>Lisa Anderson</td>
+              <td>MA Music</td>
+              <td>Music</td>
+              <td>123-456-7899</td>
+              <td>lisa.anderson@example.com</td>
+            </tr>
+            <!-- Row 11 -->
+            <tr>
+              <td>Paul Thomas</td>
+              <td>MSc Computer Science</td>
+              <td>Computer Science</td>
+              <td>123-456-7800</td>
+              <td>paul.thomas@example.com</td>
+            </tr>
+            <!-- Row 12 -->
+            <tr>
+              <td>Karen Jackson</td>
+              <td>MA French</td>
+              <td>French</td>
+              <td>123-456-7801</td>
+              <td>karen.jackson@example.com</td>
+            </tr>
+            <!-- Row 13 -->
+            <tr>
+              <td>Mark White</td>
+              <td>PhD Mathematics</td>
+              <td>Mathematics</td>
+              <td>123-456-7802</td>
+              <td>mark.white@example.com</td>
+            </tr>
+            <!-- Row 14 -->
+            <tr>
+              <td>Susan Harris</td>
+              <td>MA English</td>
+              <td>English</td>
+              <td>123-456-7803</td>
+              <td>susan.harris@example.com</td>
+            </tr>
+            <!-- Row 15 -->
+            <tr>
+              <td>Steven Lewis</td>
+              <td>MSc Physics</td>
+              <td>Physics</td>
+              <td>123-456-7804</td>
+              <td>steven.lewis@example.com</td>
+            </tr>
+            <!-- Row 16 -->
+            <tr>
+              <td>Patricia Walker</td>
+              <td>MA Sociology</td>
+              <td>Sociology</td>
+              <td>123-456-7805</td>
+              <td>patricia.walker@example.com</td>
+            </tr>
+            <!-- Row 17 -->
+            <tr>
+              <td>Robert Young</td>
+              <td>PhD Chemistry</td>
+              <td>Chemistry</td>
+              <td>123-456-7806</td>
+              <td>robert.young@example.com</td>
+            </tr>
+            <!-- Row 18 -->
+            <tr>
+              <td>Linda Allen</td>
+              <td>MA History</td>
+              <td>History</td>
+              <td>123-456-7807</td>
+              <td>linda.allen@example.com</td>
+            </tr>
+            <!-- Row 19 -->
+            <tr>
+              <td>Charles King</td>
+              <td>MSc Biology</td>
+              <td>Biology</td>
+              <td>123-456-7808</td>
+              <td>charles.king@example.com</td>
+            </tr>
+            <!-- Row 20 -->
+            <tr>
+              <td>Barbara Wright</td>
+              <td>MA Psychology</td>
+              <td>Psychology</td>
+              <td>123-456-7809</td>
+              <td>barbara.wright@example.com</td>
+            </tr>
+            <!-- Row 21 -->
+            <tr>
+              <td>James Scott</td>
+              <td>PhD History</td>
+              <td>History</td>
+              <td>123-456-7810</td>
+              <td>james.scott@example.com</td>
+            </tr>
+            <!-- Row 22 -->
+            <tr>
+              <td>Mary Green</td>
+              <td>MSc Geography</td>
+              <td>Geography</td>
+              <td>123-456-7811</td>
+              <td>mary.green@example.com</td>
+            </tr>
+            <!-- Row 23 -->
+            <tr>
+              <td>William Adams</td>
+              <td>MA Economics</td>
+              <td>Economics</td>
+              <td>123-456-7812</td>
+              <td>william.adams@example.com</td>
+            </tr>
+            <!-- Row 24 -->
+            <tr>
+              <td>Jennifer Nelson</td>
+              <td>PhD Biology</td>
+              <td>Biology</td>
+              <td>123-456-7813</td>
+              <td>jennifer.nelson@example.com</td>
+            </tr>
+            <!-- Row 25 -->
+            <tr>
+              <td>Richard Clark</td>
+              <td>MSc Physics</td>
+              <td>Physics</td>
+              <td>123-456-7814</td>
+              <td>richard.clark@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
   <!-- End Faculty Information Section -->
 
   <!-- Student Information Section -->
 
-  <section class="student-info">
-    <div class="studentinfo-title animate-on-scroll pt-5">
-      <h1> | Student Information | </h1>
-    </div>
-    <div class="container animate-on-scroll pb-5">
-      <div class="row">
-        <div class="col mx-5 py-5">
-          <table class="table table-responsive-lg">
-            <thead>
-              <tr>
-                <th>Class</th>
-                <th>Number of Students</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Junior</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>Senior</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>1st</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>2nd</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>3rd</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>4th</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>5th</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>6th</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>7th</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>8th</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>9th</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>10th</td>
-                <td>100</td>
-              </tr>
-            </tbody>
-          </table>
+  <section class="student-info animate-on-scroll">
+    <h1 class="mx-5"> >&ensp;Students Information </h1>
+    <div class="container">
+      <div class="row g-3 my-5">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card">
+            <h4 class="card-text mx-2 my-2">Junior</h4>
+            <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 35%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <h4 class="card-text mx-2 my-2">Senior</h4>
+            <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <h4 class="card-text mx-2 my-2">1st</h4>
+            <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 55%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card">
+              <h4 class="card-text mx-2 my-2">2nd</h4>
+              <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-info" style="width: 45%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card">
+              <h4 class="card-text mx-2 my-2">3rd</h4>
+              <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-info" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card">
+              <h4 class="card-text mx-2 my-2">4th</h4>
+              <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-info" style="width: 45%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card">
+              <h4 class="card-text mx-2 my-2">5th</h4>
+              <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-info" style="width: 25%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <h4 class="card-text mx-2 my-2">6th</h4>
+            <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <h4 class="card-text mx-2 my-2">7th</h4>
+            <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 35%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <h4 class="card-text mx-2 my-2">8th</h4>
+            <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 25%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <h4 class="card-text mx-2 my-2">9th</h4>
+            <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 55%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <h4 class="card-text mx-2 my-2">10th</h4>
+            <div class="progress mx-2 my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 25%"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </section>
 
   <!-- End Student Information Section -->
 
+  <!-- Infrastructure Information Section -->
+  <section class="infra-info animate-on-scroll">
+    <h1 class="mx-5"> >&ensp;Infrastructure Information </h1>
+    <div class="container mt-5">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead class="thead-dark table-primary">
+            <tr>
+              <th>Sr.No</th>
+              <th>Information</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1 -->
+            <tr>
+              <td>1</td>
+              <td>TOTAL CAMPUS AREA OF THE SCHOOL (IN SQ.MTR)</td>
+              <td>4950sq.mtr.</td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+              <td>2</td>
+              <td>NO. AND SIZE OF THE CLASS ROOMS (IN SQ.MTR)</td>
+              <td>9 X 7 sq.mtr</td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+              <td>3</td>
+              <td>NO. AND SIZE OF LAB. INCLUDING COMPUTER LABS( IN SQ. MTR)</td>
+              <td>30 X 20 sq.mtr</td>
+            </tr>
+            <!-- Row 4 -->
+            <tr>
+              <td>4</td>
+              <td>INTERNET FACILITY</td>
+              <td>Yes</td>
+            </tr>
+            <!-- Row 5 -->
+            <tr>
+              <td>5</td>
+              <td>NO. OF GIRLS TOILETS</td>
+              <td>7</td>
+            </tr>
+            <!-- Row 6 -->
+            <tr>
+              <td>6</td>
+              <td>NO. OF BOYS TOILETS</td>
+              <td>7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Infrastructure Information Section -->
+
+
   <!-- Footer Section -->
+
   <footer>
     <div class="footer-col">
       <h4>Contact us</h4>
@@ -226,10 +592,6 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
-    <div class="footer-col developer">
-      <h6 class="mt-5">Created by :</h6>
-      <p><a href="https://www.linkedin.com/in/darsh-jain-975225248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Darsh Jain </a>&nbsp; | &nbsp; <a href="https://www.linkedin.com/in/madhurima-v-a86286226/"> Madhurima Vispute</a></p>
-    </div>
   </footer>
 
   <!-- End Footer Section -->
@@ -242,7 +604,7 @@
   </div>
 
 
-  <!-- Ionicons Link -->
+  <!-- Ionicon Link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
