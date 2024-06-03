@@ -122,6 +122,7 @@ body {
     font-weight: 400;
     font-style: normal;
     letter-spacing: .5px;
+    text-decoration: 5px underline #4ebaca;
 }
 
 
@@ -133,11 +134,18 @@ body {
 /*--------------------------------------------------------------
 # Faculty Information Section
 --------------------------------------------------------------*/
-.faculty-info h1 {
+
+.faculty-details{
+    background: #4ebaca;
+}
+
+.faculty-info h1{
     font-family: "Kanit", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: 5px underline #4ebaca;
 }
 
 .faculty-info h2 {
@@ -145,27 +153,106 @@ body {
     text-transform: uppercase;
 }
 
+.faculty-btn{
+    width: 180px;
+    padding: 10px 0;
+    margin: 5px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #4ebaca;
+    background: transparent;
+    color: #4ebaca;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 3px;
+}
+
+
+.card {
+    width: 18rem;
+    height: auto;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-text{
+    font-size: 15px;
+}
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+.color{
+    background: #4ebaca;
+    color: white;
+}
 /*--------------------------------------------------------------
 # Student Information Section
 --------------------------------------------------------------*/
 
 .student-info h1 {
     font-family: "Kanit", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: 5px underline #4ebaca;
 }
 
+.class-block {
+    background-color: #f8f9fa;
+    border: 2px solid #4ebaca;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.class-block.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.class-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4ebaca;
+}
+.class-count {
+    font-size: 1.4rem;
+    color: #343a40;
+    font-weight: 700;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+.class-count.zoom {
+    transform: scale(1.2);
+}
 /*--------------------------------------------------------------
 # Infrastructure Information Section
 --------------------------------------------------------------*/
 .infra-info h1 {
     font-family: "Kanit", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: 5px underline #4ebaca;
 }
 
+.infra-info img{
+    width: 100%;
+    height: 85vh;
+}
 
 
 /*--------------------------------------------------------------
@@ -176,7 +263,7 @@ footer {
     flex-wrap: wrap;
     margin-top: auto;
     background-color: #F5F6F6;
-    padding: 60px 10%;
+    padding: 50px 10%;
 }
 
 ul {
@@ -206,11 +293,11 @@ ul {
     width: 40px;
 }
 
-ul li:not(:last-child) {
+.footer-col ul li:not(:last-child) {
     margin-bottom: 8px;
 }
 
-ul li a {
+.footer-col ul li a {
     display: block;
     font-size: 15px;
     text-transform: capitalize;
@@ -219,12 +306,12 @@ ul li a {
     transition: 0.4s;
 }
 
-ul li a:hover {
+.footer-col ul li a:hover {
     color: black;
     padding-left: 2px;
 }
 
-.links a {
+.footer-col .links a {
     display: inline-block;
     height: 44px;
     width: 44px;
@@ -237,11 +324,24 @@ ul li a:hover {
     transition: 0.4s;
 }
 
-.links a:hover {
+.footer-col .links a:hover {
     color: #4d4f55;
     background-color: white;
 }
 
+.creator{
+    display: flex;
+    margin: auto;
+}
+
+.creator h4{
+    font-size: 16px;
+}
+
+.creator a{
+    text-decoration: none;
+    color: gray;
+}
 
 /*--------------------------------------------------------------
 # Animation on Scroll
@@ -546,4 +646,11 @@ ul li a:hover {
         }
     }
 
+}
+
+@media (max-width:522px) {
+    .infra-info img{
+        height: 65vh;
+        width: 100%;
+    }
 }
