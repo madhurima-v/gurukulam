@@ -131,6 +131,12 @@ body {
     color: black;
 }
 
+#download{
+    background: transparent;
+    border: none;
+    font-size: 25px;
+}
+
 /*--------------------------------------------------------------
 # Faculty Information Section
 --------------------------------------------------------------*/
